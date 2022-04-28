@@ -1,0 +1,11 @@
+prefix=@PREFIX@
+libdir=@LIBDIR@
+includedir=@INCLUDEDIR@
+additionallibs=@ADDITIONALLIBS@
+
+Name: tree-sitter-python
+Description: Python grammar for tree-sitter
+URL: https://github.com/tree-sitter/tree-sitter-python
+Version: @VERSION@
+Libs: -L${libdir} ${additionallibs} -ltree-sitter-python
+Cflags: -I${includedir}
